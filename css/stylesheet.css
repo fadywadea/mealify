@@ -1,0 +1,138 @@
+:root {
+  --primry-color: hsl(0deg 83.93% 43.92%);
+  --white-color: #FFFFFF;
+  --font-primary: 'Amatic SC';
+  --font-defult: sans-serif;
+  --animation-duration: 400ms;
+  --inline-gap: 0.9375rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
+  background-color: var(--white-color);
+  box-shadow: 0 5px 25px rgba(1 1 1 / 10%);
+  text-transform: capitalize;
+  font-family: var(--font-defult);
+}
+
+.dot a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.dot a::after {
+  content: ".";
+  color: var(--primry-color);
+}
+
+.list-bar a {
+  text-decoration: none;
+  color: #7f7f90;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+body:has(.home:target) .home-link {
+  color: #212529;
+  border-bottom: 3px solid var(--primry-color);
+  padding-bottom: 5px;
+}
+
+body:has(.chefs:target) .chef-link {
+  color: #212529;
+  border-bottom: 3px solid var(--primry-color);
+  padding-bottom: 5px;
+}
+
+body:has(.gallery:target) .gallery-link {
+  color: #212529;
+  border-bottom: 3px solid var(--primry-color);
+  padding-bottom: 5px;
+}
+
+body:has(.contact:target) .contact-link {
+  color: #212529;
+  border-bottom: 3px solid var(--primry-color);
+  padding-bottom: 5px;
+}
+
+.nav-bar .list-bar {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar .list-bar li {
+  padding: 5px 15px;
+}
+
+.nav-bar i {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.home {
+  background-color: #EEEEEE;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 95px 102px 0px;
+}
+
+.enjoy {
+
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  text-align: start;
+  width: 50%;
+}
+
+.enjoy h2 {
+  font-family: var(--font-primary);
+  color: #37373F;
+  font-size: 4.0625rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.enjoy p {
+  font-family: var(--font-defult);
+  color: #4F4F5A;
+  font-size: 1rem;
+  margin: 20px 0px;
+  font-weight: 400;
+}
+
+.food-plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-plate img {
+  filter:  drop-shadow(4px 4px 9px #000a);
+  width: 80%;
+}
