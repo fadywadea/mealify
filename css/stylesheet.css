@@ -136,3 +136,14 @@ body:has(.contact:target) .contact-link {
   filter:  drop-shadow(4px 4px 9px #000a);
   width: 80%;
 }
+
+.food-plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-plate img {
+  filter:  drop-shadow(4px 4px 9px #000a);
+  width: 80%;
+}
