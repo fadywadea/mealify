@@ -25,6 +25,7 @@
   box-shadow: 0 5px 25px rgba(1 1 1 / 10%);
   text-transform: capitalize;
   font-family: var(--font-defult);
+  z-index: 999;
 }
 
 .dot a {
@@ -84,7 +85,7 @@ body:has(.home:target) .home-link {
   padding-bottom: 5px;
 }
 
-body:has(.chefs:target) .chef-link {
+body:has(.chefs:target) .chefs-link {
   color: #212529;
   border-bottom: 3px solid var(--primry-color);
   padding-bottom: 5px;
