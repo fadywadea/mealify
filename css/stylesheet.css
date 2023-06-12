@@ -228,11 +228,11 @@ body:has(.contact:target) .contact-link {
   margin-right: 10px;
   background-image: linear-gradient( to right, var(--primry-color) 0 50%, transparent 50% 100% );
   border-radius: 100%;
+  justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
+  z-index: 0;
+
 }
 
 .play-icon i::after {
@@ -243,6 +243,52 @@ body:has(.contact:target) .contact-link {
   border-radius: 100%;
   height: 40px;
   width: 40px;
-  left: 50%;
-    top: 50%;
+  left: 20%;
+  top: 14%;
+  z-index: 0;
+}
+
+.container {
+  flex-direction: column;
+  margin: 50px 100px;
+  padding: 40px 5px;
+}
+
+.main-title {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section2 {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0;
+  padding: 20px 0px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 70%;
 }
