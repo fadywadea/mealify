@@ -1,3 +1,4 @@
+/*Start Root*/
 :root {
   --font-defult: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Amatic SC", sans-serif;
@@ -8,6 +9,9 @@
   --inline-gap: 0.9375rem;
 }
 
+/*End Root*/
+
+/*Start body*/
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +19,9 @@
   scroll-behavior: smooth;
 }
 
+/*End body*/
+
+/*Start Style nav-bar*/
 .nav-bar {
   width: 100%;
   position: fixed;
@@ -23,12 +30,13 @@
   align-items: center;
   padding: 25px 100px;
   background-color: var(--white-color);
-  box-shadow: 0 5px 25px rgba(1 1 1 / 10%);
+  box-shadow: 0 1px 15px rgba(1 1 1 / 10%);
   text-transform: capitalize;
   font-family: var(--font-defult);
   z-index: 999;
 }
 
+/*Start dot title*/
 .dot a {
   text-decoration: none;
   color: #212529;
@@ -41,13 +49,15 @@
   color: var(--primry-color);
 }
 
+/*End dot title*/
+
+/*Start list nav bar*/
 .list-bar a {
   text-decoration: none;
   color: #7f7f90;
   font-size: 1rem;
   font-weight: 600;
 }
-
 
 .nav-bar .list-bar {
   list-style: none;
@@ -75,6 +85,7 @@
   }
 }
 */
+
 .nav-bar i {
   font-size: 25px;
   font-weight: 900;
@@ -104,6 +115,10 @@ body:has(.contact:target) .contact-link {
   padding-bottom: 5px;
 }
 
+/*End list nav bar*/
+/*End Style nav-bar*/
+
+/*Start Style Home*/
 .home {
   background-color: #EEEEEE;
   height: 100vh;
@@ -142,6 +157,7 @@ body:has(.contact:target) .contact-link {
   font-weight: 400;
 }
 
+/*Start Style palte*/
 .food-plate {
   display: flex;
   align-items: center;
@@ -205,6 +221,9 @@ body:has(.contact:target) .contact-link {
   }
 }
 
+/*End Style palte*/
+
+/*Start style button*/
 .btn-section1 {
   display: flex;
   gap: 40px;
@@ -231,9 +250,8 @@ body:has(.contact:target) .contact-link {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   position: relative;
-  z-index: 0;
-
 }
 
 .play-icon i::after {
@@ -242,13 +260,17 @@ body:has(.contact:target) .contact-link {
   display: flex;
   background-color: var(--white-color);
   border-radius: 100%;
-  height: 40px;
-  width: 40px;
-  left: 20%;
-  top: 14%;
+  height: 45px;
+  width: 45px;
+  left: 15%;
+  top: 9%;
   z-index: 0;
 }
 
+/*End style button*/
+/*End Style Home*/
+
+/*Start Section Chefs*/
 .container {
   flex-direction: column;
   margin: 50px 100px;
@@ -262,9 +284,27 @@ body:has(.contact:target) .contact-link {
   justify-content: space-between;
 }
 
+.main-title h2 {
+  text-align: center;
+  color: #7f7f90;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: var(--font--secndory);
+}
+
+.main-title p {
+  font-size: 50px;
+  font-family: var(--font-primary);
+}
+
+.main-title span {
+  color: var(--primry-color);
+}
+
 .section2 {
   display: flex;
-  width: 100%;
+  gap: 30px;
 }
 
 .card {
@@ -273,23 +313,25 @@ body:has(.contact:target) .contact-link {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  border-radius: 100px;
 }
+
 
 .card img {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   width: 70%;
-  margin: 0;
   padding: 20px 0px;
 }
 
 .card-content {
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 70%;
 }
+
+/*End Section Chefs*/
