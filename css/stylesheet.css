@@ -1,8 +1,9 @@
 :root {
+  --font-defult: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font--secndory: "Inter", sans-serif;
   --primry-color: hsl(0deg 83.93% 43.92%);
   --white-color: #FFFFFF;
-  --font-primary: 'Amatic SC';
-  --font-defult: sans-serif;
   --animation-duration: 400ms;
   --inline-gap: 0.9375rem;
 }
@@ -217,7 +218,7 @@ body:has(.contact:target) .contact-link {
   text-align: start;
 }
 
-.btn-section1 > a {
+.btn-section1>a {
   background-color: var(--primry-color);
   color: var(--white-color);
   border-radius: 0px 100vh 100vh;
@@ -226,7 +227,7 @@ body:has(.contact:target) .contact-link {
 .play-icon i {
   padding: 20px 20px;
   margin-right: 10px;
-  background-image: linear-gradient( to right, var(--primry-color) 0 50%, transparent 50% 100% );
+  background-image: linear-gradient(to right, var(--primry-color) 0 50%, transparent 50% 100%);
   border-radius: 100%;
   justify-content: center;
   align-items: center;
